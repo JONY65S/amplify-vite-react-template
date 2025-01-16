@@ -7,10 +7,12 @@ import Features from "./pages/Features";
 import UseCases from "./pages/UseCases";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/live-demo" element={<LiveDemo />} />
